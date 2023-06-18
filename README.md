@@ -42,10 +42,7 @@ This script fetches the details of videos uploaded by a YouTube channel and upda
 
 5. Replace `<GOOGLE_SHEETS_FILENAME>` in the `main` function with the name of the Google Sheets document you want to update.
 
-6. Run the script by executing the following command:
-
-```python youtube_video_tracker.py```
-
+6. Run the script.
 
 The script will authenticate with the Google API and fetch the video details. It will update the Google Sheets document with the video information.
 
@@ -69,4 +66,8 @@ The script will authenticate with the Google API and fetch the video details. It
 
 - For more information on using the Google Sheets API and YouTube Data API, refer to the official API documentation.
 
+## New Videos
 
+For adding new videos as they get uploaded, use the ethoStatsNewVideos.py script. This will add the most recent video uploaded to the file as long as it's not already in the document. 
+
+I would recommend setting up a task scheudler or cron jobs if the youtuber you choose uploades frequently. This way the document will always stay up to date. 
